@@ -1,0 +1,35 @@
+
+# RIL Interface
+rild.libpath=/system/lib/libreference-ril.so
+rild.libargs=-d /dev/ttyS0
+
+# WiFi Interface
+wifi.interface=eth0
+wifi.module_name=N/A
+
+# Bluetooth Interface
+bluetooth.power_on=/sys/class/rfkill/rfkill0/state
+
+# GPS Interface
+ro.kernel.android.gps=ttyS1
+gps.power_on=/sys/class/rfkill/rfkill2/state
+
+# GPRS Interface
+ro.radio.use-ppp=yes
+
+# LEDs (vibrator is an led device)
+led.red=red
+led.green=green
+led.blue=blue
+led.vibrator=vibrator
+
+# Backlights
+backlight.lcd=/sys/class/backlight/pwm-backlight/brightness
+backlight.button=
+backlight.keyboard=/sys/class/leds/keyboard-backlight/brightness
+
+# Headset switch
+headset.switch.name=headset
+
+# Use PacketVideo software codecs
+pv.codecs.software=1
